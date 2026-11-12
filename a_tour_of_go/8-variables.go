@@ -3,7 +3,7 @@
 //
 // A var statement can be at package or function level. We see both in this example.
 
-package main
+package a_tour_of_go
 
 import "fmt"
 

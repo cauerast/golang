@@ -7,7 +7,7 @@
 //
 // Naked return statements should be used only in short functions, as with the example shown here. They can harm readability in longer functions.
 
-package main
+package a_tour_of_go
 
 import "fmt"
 
