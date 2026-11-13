@@ -22,7 +22,7 @@
 // When you're ready to move on, click the right arrow below or type the PageDown key.
 
 
-package a_tour_of_go
+package main
 
 import "fmt"
 

@@ -7,7 +7,7 @@
 
 // (For more about why types look the way they do, see the article on Go's declaration syntax.)
 
-package a_tour_of_go
+package main
 
 import "fmt"
 

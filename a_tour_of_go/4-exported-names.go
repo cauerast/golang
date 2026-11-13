@@ -9,7 +9,7 @@
 
 // To fix the error, rename math.pi to math.Pi and try it again.
 
-package a_tour_of_go
+package main
 
 import (
 	"fmt"

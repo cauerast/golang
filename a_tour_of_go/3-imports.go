@@ -7,7 +7,7 @@
 // import "math"
 // But it is good style to use the factored import statement.
 
-package a_tour_of_go
+package main
 
 import (
 	"fmt"

@@ -3,7 +3,7 @@
 //
 // The swap function returns two strings.
 
-package a_tour_of_go
+package main
 
 import "fmt"
 
