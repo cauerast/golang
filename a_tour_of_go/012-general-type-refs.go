@@ -28,7 +28,8 @@ Used for float32, float64, and complex numbers.
 
 5. Pointers and Memory
 • %p (Pointer): Shows the memory address where the variable is stored, in hexadecimal format with the 0x prefix (e.g., 0xc0000140a8).
-Extra Modifiers (Width and Alignment)
+
+6. Extra Modifiers (Width and Alignment)
 You can combine numbers and symbols between the % and the letter to align text in tables:
 • %6d: Reserves 6 spaces and right-aligns the number.
 • %-6d: Reserves 6 spaces and left-aligns the number.
