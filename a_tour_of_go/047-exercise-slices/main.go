@@ -12,7 +12,7 @@
 
 package main
 
-import "golang.org/x/tour/pic"
+//import "golang.org/x/tour/pic"
 
 func Pic(dx, dy int) [][]uint8 {
 	a := make([][]uint8, dy)
@@ -28,5 +28,5 @@ func Pic(dx, dy int) [][]uint8 {
 }
 
 func main() {
-	pic.Show(Pic)
+	//pic.Show(Pic)
 }
