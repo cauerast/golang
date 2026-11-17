@@ -35,3 +35,8 @@ You can combine numbers and symbols between the % and the letter to align text i
 • %-6d: Reserves 6 spaces and left-aligns the number.
 • %06d: Pads empty spaces on the left with zeros (e.g., 42 becomes 000042).
 */
+
+package main
+func main(){
+	
+}
