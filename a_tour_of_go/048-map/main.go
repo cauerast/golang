@@ -7,20 +7,36 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-type Vertex4 struct {
-	Lat, Long float64
-}
+func main(){
+	var myMap map[string]uint8 = make(map[string]uint8)
+	fmt.Println(myMap)
 
-var m map[string]Vertex4
+	var myMap2 = map[string]uint8{"Adam": 23, "Sarah": 45}
+	fmt.Println(myMap2)
+	fmt.Println(myMap2["Adam"])
+	//delete(myMap2, "Adam")
 
-func main() {
-	m = make(map[string]Vertex4)
-
-	m["Bell Labs"] = Vertex4{
-		40.68433, 
-		-74.39967,
+	var age, ok = myMap2["Jason"]
+	if ok {
+		fmt.Printf("The age is %v", age)
+	} else {
+		fmt.Println("Invalid name")
 	}
-	fmt.Println(m["Bell Labs"])
+
+	// map for loop w/ key and value
+	for name, age := range myMap2 {
+		fmt.Printf("Name: %v, Age: %v \n", name, age)
+	}
+
+	var intArr [3]int8 = [3]int8{1, 2, 3}
+	// array for loop w/ index and value
+	for i, v := range intArr {
+		fmt.Printf("Index: %v, Value: %v \n", i, v)
+	}
+
+
 }

@@ -18,8 +18,20 @@ package main
 import "fmt"
 
 func main() {
-	primes := [6]int{2, 3, 5, 7, 11, 13}
+	intArr := [...]int32{1, 2, 3}
+	fmt.Println(intArr)
 
-	var s []int = primes[1:4]
-	fmt.Println(s)
+	var intSlice []int32 = []int32{4, 5, 6}
+	fmt.Printf("The length is %v w capacity %v", len(intSlice), cap(intSlice))
+
+	intSlice = append(intSlice, 7)
+	fmt.Printf("The length is %v w capacity %v \n", len(intSlice), cap(intSlice))
+
+	var intSlice2 []int32 = []int32{8, 9}
+	intSlice = append(intSlice, intSlice2...)
+	fmt.Println(intSlice)
+
+	// to specify the capacity use make()
+	var intSlice3 []int32 = make([]int32, 3, 8)
+	fmt.Println(intSlice3)
 }
