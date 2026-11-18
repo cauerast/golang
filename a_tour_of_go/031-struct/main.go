@@ -5,11 +5,20 @@ package main
 
 import "fmt"
 
-type Vertex struct {
-	X int
-	Y int
+type gasEngine struct{
+	mpg uint8
+	gallons uint8
+	// onwerInfo onwer
+	onwer
+}
+
+type onwer struct{
+	name string
 }
 
 func main() {
-	fmt.Println(Vertex{1, 2})
+	var myEngine = gasEngine{25, 15, onwer{"Alex"}}
+	myEngine.mpg = 20
+	fmt.Println(myEngine)
+	fmt.Println(myEngine.mpg, myEngine.gallons, myEngine.name)
 }
